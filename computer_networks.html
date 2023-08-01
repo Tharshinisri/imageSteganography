@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Steganography by tharshini_sri</title>
+</head>
+
+<body>
+    <h1>NETWORK SECURITY BY STEGANOGRAPHY ON IMAGE USING PYTHON</h1>
+    <h2>Computer Networks Project</h2>
+    <hr />
+    </br>
+    
+    <h3>ABSTRACT</h3>
+    <p>The word "DATA" is fundamental to the realm of modern computing world ,but what is
+        so fascinating about it? Present day, Data is the power in the world, and businesses are
+        starting to realise that data may be used to predict client trends, enhance revenue, help
+        assist the company in reaching greater heights. The technology has improved so much
+        that our prime priority is to protect data. Data sharing is expanding in these days as there
+        are a lots of data and thousands of messages transmitting every day on the internet from
+        one location to a different location. The main concern of the sender is the secure data
+        transmission, which is data protection, and it is really important that we communicate
+        our message in a way that only the receiver is capable of comprehending.
+        In this project, we are going to understand what is Steganography on images and
+        how we can implement using python.</p>
+    </br>
+
+    <h3>INTRODUCTION</h3>
+    <h3>Steganography</h3>
+    <p> The process of hiding a message(secret message) within a larger one so that the contents
+        or presence of the hidden message cannot be known to anyone. This process is called
+        Steganography. The primary goal of steganography is to supply intergroup
+        communication that is kept secret. Cryptography can only conceals the contents of a
+        secret message. But using steganography we can able to conceal the fact that a message
+        is communicated. Despite the fact that there are some distinctions, there are numerous
+        parallels between cryptography and steganography. Some authors categorize
+        steganography as a form of cryptography because hidden communication is a type of
+        secret message.
+        We can perform steganography on different transmission media like images,video,audio, or
+        text.</p>
+    </br>
+
+    <h3>TYPES OF STEGANOGRAPHY</h3>
+    <p> • Text steganography</p>
+    <p> • Image steganography</p>
+    <p> • Video steganography</p>
+    <p> • Network steganography</p>
+    <p> • E-mail steganography</p>
+    <p> • Audio steganography</p>
+    </br>
+
+    <h3>STEPS TO BE FOLLOWED TO PERFORM IMAGE STEGANOGRAPHY</h3>
+    <p>• Get the secret message which is to be shared between the sender and receiver</p>
+    <p>• Choose an image on which you are going to encode the 
+        secret message</p>
+    <p>• Encode the secret message into the selected image</p>
+    <p>• The sender shares the encoded image which contains the message to the receiver</p>
+    <p>• In receiver end, while decoding, the image, the secret message is extracted from the
+        image.So, in others point of view it is just an image but to the sender and receiver the secret
+        information is successfully shared.</p>
+    </br>
+
+    <h3>BASIC STEGANOGRAPHIC MODEL</h3>
+    <p>In this basic steganography model, a cover file(image) and a secret message is given to
+        the steganographic encoder and the stego object is communicated from sender to the
+        receiver through communication channel and steganographic decoder decodes the image
+        and the secret message is obtained.</p>
+    <img src="img/Steg_img1.png">
+    </br>
+
+    <h3>PROTOCOL FUNCTION UTILIZED BY STEGANOGRAPHY</h3>
+    <p>The various OSI RM layers that are related to steganography, since it is mainly a data
+        transmission between two parties.</p>
+    <img src="img/Steg_img2.png">
+    </br>
+
+    <h3>OSI RM LAYERS THAT TAKE PART IN IMAGE STEGANOGRAPHY</h3>
+    <h3>Datalink layer:</h3>
+    <p>In the Open Systems Interconnection (OSI) architecture model for a set of telecommunication
+        protocols, layer 2 is the datalink layer. In this layer, data bits were encoded, decoded and
+        organized before they are transported. The modified data bits are transported as frames
+        between two adjacent nodes on the same WAN or LAN.</p>
+    <img src="img/Steg_img3.png">
+    </br>
+
+    <h3>Application layer</h3>
+    <p>The layer which specifies the shared communications protocols and the host’s interface
+        methods used in a communications network is known as application layer. It is otherwise
+        known as abstraction layer. Both the standard models of computer networking, the Internet
+        Protocol Suite (TCP/IP) and the OSI model uses the application layer abstraction.</p>
+    <img src="img/Steg_img4.png">
+    </br>
+
+    <h3>TOOL USED:</h3>
+    <h3>PYTHON</h3>
+    <p>• Python is clarified, high level and general-purpose programming language. It was
+        created by Guido van
+        Rossum and first released in 1991,Python's design philosophy highlights code readability
+        in which significant whitespace plays a notable use. It helps programmers to write
+        clear,logical code for small and large-scale projects by it's language constructs and object-
+        oriented approach. </p>
+    <p>• In this project, we implement our concept of image- based steganography using the
+        Python programming language. </p>
+    <p> • We encode our data and then perform least significant bit (LSB) technique and
+        decode our data. Hence, we hide our text messages in image by using PYTHON CODE</p>
+    </br>
+
+    <h3>BASIC CONCEPT OF LEAST SIGNIFICANT BIT TECHNIQUE</h3>
+    <P>We use significant bit technique to implement our steganography in the image. The data is converted to bits and modification in LSB doesn't affect the data much while MSB does. So, while encoding our secret message changes are made in LSB.</P>
+    <img src="img/Steg_img5.png">
+    </br>
+
+    <h3>STEPS TO BE FOLLOWED IN PYTHON:</h3>
+    <p>• Import all the required python libraries</p>
+    <p>• Define a function to change any type of data into binary bits, to convert the secret data and
+        pixel values to binary in the encoding and decoding phase.</p>
+    <p>• Write a function to hide secret message into the image by altering the least significant bit
+        and another function todecode the hidden message from the stego image • Function that
+        takes the input image name and secret message as input from user and calls hideData() to
+        encode the message</p>
+    <p>• Create a function to ask the user to enter the name of the stegoimage that needs to be
+        decoded and call theshowData() function to return the message which was decoded.</p>
+    <p>•Main function()</p>
+    <p>•Run the program, then see the results</p>
+    </br>
+
+    <img src="img/Steg_img6.png">
+    <img src="img/Steg_img7.png">
+    </br>
+
+    <h3>MERITS OF NETWORK SECURITY BY IMAGE STEGANOGRAPHY USING PYTHON</h3>
+    <p>• It provides secured data transmission.</p>
+    <p>• Up to now, cryptography plays a vital role in protecting the secret communication between
+        the sender and the intended receiver. However, nowadays people uses steganography
+        techniques besides cryptography, because it adds more protective layers to the hidden data.
+        The advantage of using steganography over cryptography alone is that the intended secret
+        message does not attract attention to itself as an object of scrutiny.</p>
+    <p>• It is difficult to detect only the intended receiver can able to detect.</p>
+    <p>• If we use large number of softwares, it can be done faster.</p>
+    </br>
+
+    <h3>DEMERITS OF NETWORK SECURITY BY IMAGE STEGANOGRAPHY USING
+        PYTHON</h3>
+    <p>• Steganography is popular among cyber criminals. Recent attacks shows that the attackers used
+        Steganography to embed the malicious code inside the file, which is found by security
+        researchers that attackers use new malware campaign which uses image to hide the data.</p>
+    <p>• Image may become distorted. While compressing image such as JPEG, secret information
+        may lost.When steganography is implemented properly, it can be difficult to detect, but not
+        impossible.
+        </p>
+    <p>• Large number of data and large file size which is considered to be disadvantage.</p>
+    </br>
+
+    <h3>CONCLUSION AND FUTURE PLANS</h3>
+    <p>• Steganography is the nascent stage of development</p>
+    <p>• This project provides new method of image steganography ie, using python</p>
+    <p>• Our method is general and extended to other LSB based steganographic methods</p>
+    <p>• Identifying the maximum capacity of information that can be hidden in an message using a
+        particular steganographic tool has to be modeled</p>
+    <p>• Postively speaking, steganography has the real potent for the safe transmission of data in this
+        hackers world when utilized in a proper manner.</p>
+    </br>
+
+    <h3>REFERENCES</h3>
+    <p>• Gowda,S.N and Sulakhe, s., 2016,April. Block based least significant bit
+        algorithm for image steganography. Annual
+        Int'l conference on intelligent computing, computer science and information systems
+        (ICCSIS-16).</p>
+    <p>• http://en.wikipedia.org/wiki/steganography</p>
+    <p>• Article by AshwinGoel for image based steganography using python, improvedby
+        PratikBhattacharjee2 and AshwinGoel</p>
+
+</body>
+
+</html>
